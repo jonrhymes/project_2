@@ -1,3 +1,6 @@
+# REMEMBER ENGINES or it won't work. Make sure you have start. 
+
+```json 
 {
   "engines": {
     "node": "13.12.0"
@@ -13,10 +16,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "method-override": "^3.0.0",
-    "mongoose": "^5.9.15"
-  }
+  "license": "ISC"
 }
+```

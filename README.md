@@ -5,11 +5,20 @@
 
 I love to swim in beautiful Florida springs and I wanted a way to track the springs for any impulsive visit. 
 
-The app is built using Node.js, Mongoose, Express, JSX, CSS, HTML and Photoshop. It incorporates the MVC file structure and the 7 RESTful routes and it operates at full CRUD.
+The app is built using:
+* Node.js
+* Mongoose
+* Express
+* JSX
+* CSS
+* HTML
+* Photoshop. 
+
+It incorporates the MVC file structure and the 7 RESTful routes and it operates at full CRUD.
 </p>
 
 <h3>Wireframes:</h3>
-<img src="Wireframes-Project_2/Wireframe_Desktop-Page1.png">
+<img src="img/Wireframes-Project_2/Wireframe_Desktop-Page1.png"/>
 
 
 

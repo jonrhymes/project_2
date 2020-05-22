@@ -9,7 +9,7 @@ The app is built using Node.js, Mongoose, Express, JSX, CSS, HTML and Photoshop.
 </p>
 
 <h3>Wireframes:</h3>
-<img src="/public/img/Wireframes-Project_2/Wireframe_Desktop-Page1.png">
+<img src="Wireframes-Project_2/Wireframe_Desktop-Page1.png">
 
 
 

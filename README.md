@@ -18,8 +18,23 @@ It incorporates the MVC file structure and the 7 RESTful routes and it operates 
 </p>
 
 <h3>Wireframes:</h3>
-<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page1.png" style="width=300px"/>
+<img src="./public/img/Wireframes-Project_2/Wireframe_Mobile-Page1.png" width="300"/>
+_Mobile Home Page_
 
+<img src="./public/img/Wireframes-Project_2/Wireframe_Mobile-Show.png" width="300"/>
+_Mobile Show Page_
+
+<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page1.png" width="300"/>
+_Desktop Home Page_
+
+<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page2.png" width="300"/>
+_Desktop Scroll_
+
+<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Show.png" width="300"/>
+_Desktop Show Page_
+
+<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Edit.png" width="300"/>
+_Desktop Edit Page_
 
 
 # REMEMBER ENGINES or it won't work. Make sure you have start. 

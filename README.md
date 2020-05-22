@@ -45,7 +45,7 @@ _Desktop Edit Page_
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Edit.png" width="300"/>
 
 
-# REMEMBER ENGINES or it won't work. Make sure you have start. 
+<h4>For Heroku, use engines and the current version of Node.js. Make sure start is specified.</h4>
 
 ```json 
 {

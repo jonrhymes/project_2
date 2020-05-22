@@ -18,7 +18,7 @@ It incorporates the MVC file structure and the 7 RESTful routes and it operates 
 </p>
 
 <h3>Wireframes:</h3>
-<img src="img/Wireframes-Project_2/Wireframe_Desktop-Page1.png"/>
+<img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page1.png" style="width=300px"/>
 
 
 

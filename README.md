@@ -8,6 +8,7 @@ The app is built using:
 * Mongoose
 * Express
 * JSX
+* JavaScript
 * CSS
 * HTML
 * Photoshop. 
@@ -15,7 +16,7 @@ The app is built using:
 It incorporates the MVC file structure and the 7 RESTful routes and operates at full CRUD.
 </p>
 
-> I love to swim in beautiful Florida > springs and I wanted a way to track > the springs for any impulsive visit. 
+> I love to swim in Florida's beautiful springs and I wanted a way to track the springs for any impulsive visit. 
 
 <h3>Wireframes:</h3>
 

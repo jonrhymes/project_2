@@ -20,21 +20,27 @@ It incorporates the MVC file structure and the 7 RESTful routes and it operates 
 <h3>Wireframes:</h3>
 
 _Mobile Show Page_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Mobile-Page1.png" width="300"/>
 
 _Mobile Show Page_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Mobile-Show.png" width="300"/>
 
 _Desktop Home Page_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page1.png" width="300"/>
 
 _Desktop Scroll_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Page2.png" width="300"/>
 
 _Desktop Show Page_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Show.png" width="300"/>
 
 _Desktop Edit Page_
+<br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Edit.png" width="300"/>
 
 

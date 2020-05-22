@@ -1,9 +1,7 @@
 <h1>GA Project 2: Springs.ly</h1>
 
-<h3>Project Goals</h3>
+<h3>Project Goals:</h3>
 <p>For my second project, I set out to build a mobile-first app that displayed real-time databases from APIs and could be queried.
-
-I love to swim in beautiful Florida springs and I wanted a way to track the springs for any impulsive visit. 
 
 The app is built using:
 * Node.js
@@ -14,8 +12,10 @@ The app is built using:
 * HTML
 * Photoshop. 
 
-It incorporates the MVC file structure and the 7 RESTful routes and it operates at full CRUD.
+It incorporates the MVC file structure and the 7 RESTful routes and operates at full CRUD.
 </p>
+
+> I love to swim in beautiful Florida > springs and I wanted a way to track > the springs for any impulsive visit. 
 
 <h3>Wireframes:</h3>
 

@@ -11,7 +11,7 @@ The app is built using:
 * JavaScript
 * CSS
 * HTML
-* Photoshop. 
+* Photoshop 
 
 It incorporates the MVC file structure and the 7 RESTful routes and operates at full CRUD.
 </p>
@@ -20,7 +20,7 @@ It incorporates the MVC file structure and the 7 RESTful routes and operates at 
 
 <h3>Wireframes:</h3>
 
-_Mobile Show Page_
+_Mobile Home Page and Scroll_
 <br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Mobile-Page1.png" width="300"/>
 

@@ -14,6 +14,9 @@ class Default extends React.Component {
 
                     <link rel="stylesheet" href="https://use.typekit.net/tsy6pbe.css" />
 
+                    {/* Font Library from Google Fonts: https://fonts.google.com/specimen/Lato?query=lato */}
+                    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400" rel="stylesheet" /> 
+
                     {/* CSS */}
 
                     <link href ="/css/styles.css" rel="stylesheet"/>
@@ -32,9 +35,11 @@ class Default extends React.Component {
                 
                 <body>
 
-                    <header>
+                    <header className="header-container">
 
-                        <div className="menu">~<br/>~<br />~<br /></div><h1 className="logo">Springs.ly</h1>
+                        <div className="menu">~<br/>~<br />~<br /></div><h1 className="logo"><a href="/springs">Springs.ly</a></h1>
+
+                        <div>Sign in</div>
                     
                     </header>
 

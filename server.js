@@ -54,7 +54,7 @@ const isAuthenticated = (req, res, next) => {
 // ROUTES
 
 app.get('/', (req, res) => {
-    res.send('Hello world');
+    res.send('<a href="/springs"><h1>Jump In</h1></a>');
 });
 
 /***** SEED *****/
@@ -80,13 +80,48 @@ app.get('/springs', (req, res) => {
     res.render('Index', { springs });
 });
 
-/***** SHOW *****/
-app.get('/springs/:id', (req, res) => {
-    res.render('Show')
+/***** NEW *****/
+app.get('/springs/new', (req, res) => {
+    res.render('New');
+});
+
+/***** CREATE *****/
+app.post('/springs', (req, res) => {
+    springs.push(req.body);
+    res.redirect('/springs');
 })
 
+
+
 /***** DELETE *****/
-// app.delete()
+app.delete('/springs/:id', (req, res) => {
+    console.log(req.query);
+    const { id } = req.params;
+    springs.splice(id, 1);
+    res.redirect('/springs');
+})
+
+/***** EDIT *****/
+app.get('/springs/:id/edit', (req, res) => {
+    res.render('Edit', {
+        spring: springs[req.params.id],
+        id: req.params.id
+    })
+})
+
+/***** UPDATE *****/
+app.put('/springs/:id', (req, res) => {
+    const { id } = req.params;
+    console.log(body);
+    springs[id] = req.body;
+    res.redirect('/springs');
+});
+
+/***** SHOW *****/
+app.get('/springs/:id', (req, res) => {
+    console.log(springs[req.params.id])
+    res.render('Show', { spring: springs[req.params.id] }); 
+});
 
 /***** LISTEN *****/
 app.listen(PORT, (req, res)=> {

@@ -15,20 +15,20 @@ class Index extends React.Component {
                             <div key={id}>
                             <div>
                                 <p>{spring.name}</p>
-                            <div>
+                            {/* <div>
                     <input type="checkbox" value="visited"/>
                             <div>{spring.visited ? 'on' : ''}</div>
                     <p>{spring.visited ? `I've been here!` : `I haven't been! :(`}</p>
-                            </div>
+                            </div> */}
                                 <img src={`/img/Springs-Images/${spring.name}/1.jpg`} alt="image of springs"/>
                                 <input type="checkbox" value="visited"/>
                                 <p className="spring-act-index">{spring.activities}</p>
                             </div>
                             <a className="see-more" href={`/springs/${spring._id}`}>See More</a>
                             <form action={`/springs/${spring._id}?_method=DELETE`} method="POST">
-                                <input type="submit" value="delete"/>
+                                <input type="submit" value="SEEN IT"/>
                             </form>
-                            <form action={`/springs/${spring._id}/edit`} method="GET">
+                            <form action={`/springs/edit/${spring._id}`} method="GET">
                                 <input type="submit" value="edit" />
                             </form>
                             </div>

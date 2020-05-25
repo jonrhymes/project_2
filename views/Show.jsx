@@ -3,7 +3,7 @@ const Default = require('./Default')
 
 class Show extends React.Component {
     render() {
-        
+        const { springs } = this.props;
         return (
             <Default>
                 

@@ -1,9 +1,14 @@
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override');
+
+const springs = require('./models/springs.js');
+
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || 3000; /***** I'M DIFFERENT *****/
+
 const db = mongoose.connection;
-const methodOverride = require('method-override');
+
 const springController = require('./controllers/springs.js')
 const userController = require('./controllers/users_controllers.js')
 const session = require('express-session')
@@ -11,7 +16,7 @@ const User = require('./models/users.js')
 const bcrypt = require('bcrypt')
 
 /***** IMPORT DATA *****/
-const Spring = require('./models/springs.js');
+
 
 /***** MIDDLEWARE *****/
 app.use(express.urlencoded({ extended: true }));

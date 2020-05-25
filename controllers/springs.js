@@ -1,5 +1,5 @@
 // const express = require('express')
-// const springController = express.Routher()
+// const springController = express.Router()
 // const mongoose = require('mongoose')
 // const Spring = require('../models/springs.js')
 
@@ -10,3 +10,4 @@
 //         res.redirect('/sessions/new')
 //     }
 // }
+

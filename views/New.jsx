@@ -8,11 +8,11 @@ class New extends React.Component {
                 <h1>Found a new spring?</h1>
                 <h2>Tell us about it!</h2>
                 <form action="/springs" method="POST">
-                    Name: <input type="text" name="name"/>
+                    Visited: <input type="checkbox" checked value="visited"/>
                     <br />
-                    Activities: <input type="text" name="activities" />
+                    Spring name: <input type="text" name="name"/>
                     <br />
-                    Info: <input type="text" name="info"/>
+                    What did you do there? <input type="text" name="comments"/>
                     <br />
                     <input type="submit" name="" value="Submit Spring"/>
                 </form>

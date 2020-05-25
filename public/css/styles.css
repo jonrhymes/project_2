@@ -54,6 +54,11 @@ body {
     padding: 0 25px;
 }
 
+.add {
+    text-decoration: none;
+    color: white;
+}
+
 .see-more {
     text-decoration: none;
     color: white;

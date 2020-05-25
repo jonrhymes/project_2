@@ -3,26 +3,16 @@ const Default = require('./components/Default')
 
 class Edit extends React.Component {
     render() {
-        const { spring } = this.props;
-        console.log(spring)
+        const {spring} = this.props;
         return (
             <Default title="EDIT PAGE">
-                <h1>{spring.name}</h1>
-                <h2>Tell us your thoughts!</h2>
-                <div>
-                    {spring.visited ? `√` : ''}</div>
-                    <p>{spring.visited ? `I've been here!` : `I haven't been! :(`}</p>
-                <div>
+                <h1>Edit {spring.name}</h1>
+                <h2>Give the spring a nickname!</h2>
                 <form action={`/springs/${this.props.id}?_method=PUT`} method="POST">
-                    <h2>Update Activities</h2>
-                    <p className="spring-act-edit">{spring.activities.join(', ')}</p>
-                    <input type="text" name="activities"/>
-                    <h2>Other Comments:</h2>
-                    <input type="text" name="comments" value={spring.comments} placeholder="Cool place to swim!"/>
+                    <input type="text" name="name"/>
                     <br />
-                    <input type="submit" value="Update"/>
+                    <input type="submit" value="update"/>
                 </form>
-                </div>
             </Default>
             
         )

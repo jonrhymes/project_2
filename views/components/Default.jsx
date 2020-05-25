@@ -26,7 +26,7 @@ class Default extends React.Component {
                     {/* Bootstrap JS */}
     {/* <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" defer></script> */}
 
-    {/* <script src="/app.js"></script> */}
+                    <script src="./js/app.js"></script>
 
                     {/* Springs.ly title */}
                     <title>{this.props.title}</title>

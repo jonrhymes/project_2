@@ -14,7 +14,8 @@ const springSchema = new Schema({
     weather: String,
     activities: Array,
     info: Array,
-     comments: String
+    comments: String,
+    newImg: String
 }, {timestamps: true});
 
 module.exports = model('Spring', springSchema);

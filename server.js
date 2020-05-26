@@ -23,7 +23,7 @@ const bcrypt = require('bcrypt')
 /***** MIDDLEWARE *****/
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use(methodOverride.apply('_method'));
+app.use(methodOverride('_method'));
 // app.use(session({
 //     secret: process.env.SECRET,
 //     resave: false,
@@ -72,7 +72,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'thunderstorm',
             activities: [ 'Manatees', 'Swim', 'Snorkel', 'Scuba Dive', 'Fish', 'Camp', 'Horseback Rides', 'Bird Watch', 'Boat Tours' ],
             info: ['102 million gallons of water daily ', '72º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         },
         {
             name: 'Ginnie Springs',
@@ -83,7 +84,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'sunny',
             activities: [ 'Swim', 'Snorkel', 'Tube', 'Kayak', 'Canoe', 'Paddleboard', 'Diving' ],
             info: [ '80 million gallons of water daily', '72º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         },
         {
             name: 'Homosassa Springs',
@@ -94,7 +96,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'overcast',
             activities: [ 'Hike', 'Camp', 'Horseback Rides', 'Bird Watch', 'Boat Tours' ],
             info: ['65 million gallons of water daily ', '77º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         }, 
         {
             name: 'Ichetucknee Springs',
@@ -105,7 +108,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'cloudy',
             activities: [ 'Swim', 'Snorkel', 'Scuba Dive', 'Tube', 'Camp', 'Bird Watch' ],
             info: ['200 million gallons of water daily ', '72º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
           },
         {
             name: 'Salt Springs',
@@ -116,7 +120,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'cloudy',
             activities: [ 'Swim', 'Snorkel', 'Scuba Dive', 'Tube', 'Camp', 'Bird Watch' ],
             info: ['200 million gallons of water daily ', '72º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
           },
           {
             name: 'Silver Glen Springs',
@@ -127,7 +132,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'clear sky',
             activities: [ 'Swim', 'Snorkel', 'Canoe', 'Scuba Dive', 'Boat Tours' ],
             info: ['65 million gallons of water daily ', '72º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         },
         {
             name: 'Silver Springs',
@@ -138,7 +144,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'partly cloudy',
             activities: [ 'Hike', 'Camp', 'Horseback Rides', 'Bird Watch', 'Boat Tours' ],
             info: ['117 million gallons of water daily ', '74º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         },
         {
             name: 'Weeki Wachee Springs',
@@ -149,7 +156,8 @@ app.get('/springs/seed', (req, res) => {
             weather: 'sunny',
             activities: [ 'Mermaids', 'Swim', 'Snorkel', 'Water Park', 'Paddleboard', 'Canoe', 'Boat Tours' ],
             info: ['117 million gallons of water daily ', '74º year-round water temp' ],
-            comments: ""
+            comments: "",
+            newImg: ""
         }
         ])
         res.redirect('/springs')
@@ -191,7 +199,8 @@ app.get('/springs/:id', (req, res) => {
 app.post('/springs/', (req, res) => {
     // res.send(req.body)
     console.log(req.body)
-    if (req.body.visited == 'on') {
+    console.log(req.body.visited)
+    if (req.body.visited) {
         req.body.visited = true;
     } else {
         req.body.visited = false;
@@ -220,15 +229,15 @@ app.delete('/springs/:id', (req, res) => {
 });
 
 /***** UPDATE *****/
-app.put('/springs/edit/:id', (req, res) => {
+app.put('/springs/:id', (req, res) => {
     // const { id } = req.params;
     // console.log(body);
-    if (req.body.visited == 'on') {
+    if (req.body.visited) {
         req.body.visited = true;
     } else {
         req.body.visited = false;
     }
-    Spring.findByIdAndUpdate(req.params.id, req.body, (error, foundSpring) => {
+    Spring.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, foundSpring) => {
         res.redirect('/springs');
     })
 });

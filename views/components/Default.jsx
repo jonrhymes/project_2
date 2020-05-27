@@ -33,19 +33,25 @@ class Default extends React.Component {
             
                 </head>
                 
-                <body>
+                <body className="parent-container">
+                    <header className="header-navbar">
 
-                    <header className="header-container">
-
-                        <div className="menu">~<br/>~<br />~<br /></div><h1 className="logo"><a href="/springs">Springs.ly</a></h1>
-
-                        <div>Sign in</div>
+                        <div className="menu">
+                            <div className="btn">
+                            ~<br />
+                            ~<br />
+                            ~<br />
+                            </div>
+                        <div className="logo">
+                        <h1 className="logo-text"><a href="/springs">Springs.ly</a></h1>
+                        </div>
+                        </div>
                     
                     </header>
-
+                    <div className="child-container">
                     {this.props.children}
-            
-
+                    </div>
+                
                 </body>
             
             </html>

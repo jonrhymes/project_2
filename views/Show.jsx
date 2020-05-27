@@ -4,10 +4,10 @@ const Default = require('./components/Default')
 class Show extends React.Component {
     render() {
         const spring = this.props.spring;
-        console.log(spring.newImg)
+        // console.log(spring.newImg)
 
         return (
-            <Default title="SHOW SPRING">
+            <Default title="SHOW PAGE: SPRINGS">
                 <div className="card-container">
                 <h1 className="spring-name">{spring.name}</h1>
                 <p className="spring-act">{spring.activities.join(', ')}</p>

@@ -4,9 +4,9 @@ const Default = require('./components/Default');
 class New extends React.Component {
     render() {
         const { springs } = this.props;
-        console.log(springs)
+        // console.log(springs)
         return (
-            <Default title="NEW PAGE">
+            <Default title="NEW PAGE: SPRINGS">
                 <h1>Found a new spring?</h1>
                 <h2>Tell us about it!</h2>
                 <form action="/springs" method="POST">

@@ -18,6 +18,10 @@ It incorporates the MVC file structure and the 7 RESTful routes and operates at 
 
 > I love to swim in Florida's beautiful springs and I wanted a way to track the springs for any impulsive visit. 
 
+<h3>User Stories:</h3>
+<p>Users can see an Index of Florida Springs and step into each Spring to see more info about it.
+Users have the ability to make New springs or Delete ones they've been to.</p>
+
 <h3>Wireframes:</h3>
 
 _Mobile Home Page and Scroll_

@@ -4,9 +4,9 @@ const Default = require('./components/Default')
 class Edit extends React.Component {
     render() {
         const {spring} = this.props;
-        console.log(spring)
+        // console.log(spring)
         return (
-            <Default title="EDIT PAGE">
+            <Default title="EDIT PAGE: SPRINGS">
                 <h1>Edit {spring.name}</h1>
                 <form action={`/springs/${spring._id}?_method=PUT`} method="POST">
                 Have you been here?

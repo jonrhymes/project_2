@@ -3,13 +3,13 @@ const springController = express.Router()
 const mongoose = require('mongoose')
 const Spring = require('../models/springs.js')
 
-const isAuthenticated = (req, res, next) => {
-    if (req.session.currentUser) {
-        return next()
-    } else {
-        res.redirect('/sessions/new')
-    }
-}
+// const isAuthenticated = (req, res, next) => {
+//     if (req.session.currentUser) {
+//         return next()
+//     } else {
+//         res.redirect('/sessions/new')
+//     }
+// }
 
 // ROUTES
 
@@ -133,10 +133,11 @@ springController.get('/', (req, res) => {
             res.render('Index', props)}
         }
         Spring.find({}, next)
+        // res.redirect('/springs')
 });
 
 /***** NEW *****/
-springController.get('/new', isAuthenticated, (req, res) => {
+springController.get('/new', (req, res) => {
     res.render('New');
 });
 
@@ -154,7 +155,7 @@ springController.get('/:id', (req, res) => {
 /***** FUNCTIONAL ROUTES *****/
 
 /***** CREATE *****/
-springController.post('/', isAuthenticated, (req, res) => {
+springController.post('/', (req, res) => {
     // res.send(req.body)
     console.log(req.body)
     console.log(req.body.visited)
@@ -173,21 +174,21 @@ springController.post('/', isAuthenticated, (req, res) => {
 })
 
 /***** EDIT *****/
-springController.get('/edit/:id', isAuthenticated, (req, res) => {
+springController.get('/edit/:id', (req, res) => {
     Spring.findById(req.params.id, (error, foundSpring) => {
         res.render('Edit', {spring: foundSpring})
     })
 });
 
 /***** DELETE *****/
-springController.delete('/:id', isAuthenticated, (req, res) => {
+springController.delete('/:id', (req, res) => {
     Spring.findByIdAndRemove(req.params.id, (error, foundSpring) => {
         res.redirect('/springs');
     })
 });
 
 /***** UPDATE *****/
-springController.put('/:id', isAuthenticated, (req, res) => {
+springController.put('/:id', (req, res) => {
     // const { id } = req.params;
     // console.log(body);
     if (req.body.visited) {

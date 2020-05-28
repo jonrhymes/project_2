@@ -13,6 +13,7 @@ class Index extends React.Component {
                         return (
                             <div className="main-index" key={id}>
                                 <p className="name-index">{spring.name}</p>
+                                {/* TERNARY: If you've visited, show "You've been here." If you haven't visited, show "Check it out." */}
                                 <div className="visited-index">{spring.visited ? <h2>Wow you've been here!<label className="checkbox-container"><input type="checkbox" name="visited" defaultChecked className="checkbox-index"/><span className="checkmark"></span></label></h2> : <h2>Check it out soon!</h2>}
                                 </div>
                                 {/* TERNARY: If a new link is provided, show the pic. If no link is provided, show the broken image link. */}

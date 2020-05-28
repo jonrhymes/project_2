@@ -179,12 +179,11 @@ img {
     padding-left: 300px;
     color: white;
     font-size: 30px;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .add:hover {
     color: var(--accent-color);
-    background-color: var(--accent-border);
 }
 
 .visited-index > h2 {
@@ -211,14 +210,31 @@ img {
 
 .edit-link {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-family: var(--main-font);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.edit-link:hover {
+    background-color: var(--accent-border);
 }
 
 .delete-link {
     font-size: 30px;
     margin-bottom: 30px;
     font-family: var(--main-font);
+    background-color: rgb(214, 89, 89);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.delete-link:hover {
+    background-color: rgb(244, 62, 62);
 }
 
 
@@ -228,12 +244,60 @@ img {
     font-size: 20px;
     text-align: center;
     padding: 5px 50px 5px 50px;
+    width: 60%;
 }
 
 
 
 .card-container {
-    margin-top: 10px;
+    margin: 150px 200px 30px 200px;
+}
+
+.card-header {
+    width: 70%;
+    padding: 30px;
+    text-align: center;
+}
+
+.show-info-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.show-images {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    background-color: var(--accent-border);
+    padding: 15px;
+    border-radius: 25px;
+    /* margin: 20px; */
+    box-sizing: border-box;
+}
+
+.show-images img {
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+  
+.show-images img:first-of-type {
+    display: block;
+}
+
+.show-images:hover {
+    background-color: var(--accent-color);
+}
+
+.show-info {
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: inline;
+    padding: 20px;
+    /* width: 400px; */
 }
 
 .spring-name {
@@ -247,6 +311,7 @@ img {
     color: white;
     font-size: 35px;
     font-weight: 300;
+    width: 80%;
 }
 
 .spring-act-edit {
@@ -255,8 +320,29 @@ img {
     font-size: 20px;
     font-weight: 300;
 }
-/* 
+
+.new-container {
+    margin: 150px 200px;
+}
+
+.edit-container {
+    margin: 150px 200px;
+}
+
+.edit-form {
+    font-size: 20px;
+}
+
+.edit-activities {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-family: var(--main-font);
+    width: 60%; 
+    border: none;
+}
+
 .map {
     width: 600px;
     height: 450px;
-} */
+}

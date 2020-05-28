@@ -47,7 +47,7 @@ springController.get('/seed', (req, res) => {
         },
         {
             name: 'Homosassa Springs',
-            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23042.95116842047!2d-82.59704551181224!3d28.517403827637764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e820349a7e9b51%3A0x3ee81b3447a5426c!2sWeeki%20Wachee%2C%20FL!5e1!3m2!1sen!2sus!4v1590293032913!5m2!1sen!2sus',
+            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97445.6728039264!2d-82.56756780998057!3d28.81476848056121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e815163f4432b1%3A0x94cc177075ec0fc7!2sHomosassa%20Springs%2C%20FL!5e1!3m2!1sen!2sus!4v1590610372265!5m2!1sen!2sus',
             img: [ '1.jpg', '2.jpg', '3.jpg' ],
             visited: false,
             temp: '73º',
@@ -71,7 +71,7 @@ springController.get('/seed', (req, res) => {
           },
         {
             name: 'Salt Springs',
-            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13910.620389162974!2d-81.74385741109613!3d29.351102166086893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e64581d856535f%3A0x9355f4027308ccf4!2sSalt%20Springs%2C%20FL%2032134!5e0!3m2!1sen!2sus!4v1590354564850!5m2!1sen!2sus',
+            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12117.456678352944!2d-81.73945857037378!3d29.3510836785594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e64581d856535f%3A0x9355f4027308ccf4!2sSalt%20Springs%2C%20FL%2032134!5e1!3m2!1sen!2sus!4v1590628500437!5m2!1sen!2sus',
             img: ['1.jpg', '2.jpg', '3.jpg'],
             visited: false,
             temp: '76º',
@@ -83,7 +83,7 @@ springController.get('/seed', (req, res) => {
           },
           {
             name: 'Silver Glen Springs',
-            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23042.95116842047!2d-82.59704551181224!3d28.517403827637764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e820349a7e9b51%3A0x3ee81b3447a5426c!2sWeeki%20Wachee%2C%20FL!5e1!3m2!1sen!2sus!4v1590293032913!5m2!1sen!2sus',
+            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10851.627691590822!2d-81.64779810030201!3d29.24637403958066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e653d44b20bdb1%3A0xc18eeef8ca51e879!2sSilver%20Glen%20Springs!5e1!3m2!1sen!2sus!4v1590611306572!5m2!1sen!2sus',
             img: ['1.jpg', '2.jpg', '3.jpg'],
             visited: false,
             temp: '70º',
@@ -95,7 +95,7 @@ springController.get('/seed', (req, res) => {
         },
         {
             name: 'Silver Springs',
-            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23042.95116842047!2d-82.59704551181224!3d28.517403827637764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e820349a7e9b51%3A0x3ee81b3447a5426c!2sWeeki%20Wachee%2C%20FL!5e1!3m2!1sen!2sus!4v1590293032913!5m2!1sen!2sus',
+            map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12132.97152615727!2d-82.06143997038055!3d29.220365278758305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e62d6df9a6a737%3A0xbbae66545442a542!2sSilver%20Springs%2C%20FL!5e1!3m2!1sen!2sus!4v1590610890459!5m2!1sen!2sus',
             img: ['1.jpg', '2.jpg', '3.jpg'],
             visited: false,
             temp: '77º',
@@ -133,7 +133,7 @@ springController.get('/', (req, res) => {
             res.render('Index', props)}
         }
         Spring.find({}, next)
-        // res.redirect('/springs')
+        res.redirect('/seed')
 });
 
 /***** NEW *****/

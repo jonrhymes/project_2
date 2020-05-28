@@ -6,6 +6,7 @@
 The app is built using:
 * Node.js
 * Mongoose
+* MongoDB
 * Express
 * JSX
 * JavaScript

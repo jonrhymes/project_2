@@ -1,7 +1,7 @@
 // console.log('hi')
 // console.log($)
 
-// Modified from Jerrica's Corgi Carousel
+/***** Modified from Jerrica's Corgi Carousel: https://git.generalassemb.ly/Software-Engineering-Immersive-Remote/SEIR-Nova/tree/2f19aa4471b2e22ec2222ab8b52112af0ebced0e/unit_1/w03d04/morning_exercise *****/ 
 
 $(() => {
     let currentImgIndex = 0

@@ -131,12 +131,10 @@ springController.get('/', (req, res) => {
                 springs: allSprings
             }
             res.render('Index', props)}
+            res.redirect('/springs')
         }
         Spring.find({}, next)
-        if(error){
-            console.log(error)
-        } else {      
-        res.redirect('/springs') }
+        // res.redirect('/seed')
 });
 
 /***** NEW *****/

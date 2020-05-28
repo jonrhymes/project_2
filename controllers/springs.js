@@ -122,7 +122,7 @@ springController.get('/seed', (req, res) => {
 })
 
 /***** INDEX *****/
-springController.get('/springs', (req, res) => {
+springController.get('/', (req, res) => {
     const next = (error, allSprings) => {
         if(error) {
             console.log(error)
@@ -133,7 +133,10 @@ springController.get('/springs', (req, res) => {
             res.render('Index', props)}
         }
         Spring.find({}, next)
-        res.redirect('/springs/seed')
+        if(error){
+            console.log(error)
+        } else {      
+        res.redirect('/springs') }
 });
 
 /***** NEW *****/

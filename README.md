@@ -4,24 +4,24 @@
 <p>For my second project, I set out to build a mobile-first app that displayed real-time databases from APIs and could be queried. However, what resulted was  accomplished with a psuedo-Api, whereby I seeded data into a Schema that's stored in a Mongo database. The db serves up arrays of trivia, activities, and a carousel of images. 
 
 The app is built using:
-* Node.js
-* Mongoose
-* MongoDB
-* Express
-* JSX
-* JavaScript
-* CSS
+
 * HTML
-* Photoshop 
+* CSS
+* JavaScript
+* Mongoose / MongoDB
+* React Express
+* Node.js
+* Adobe Photoshop 
+* Adobe Fonts
 
 It incorporates the MVC file structure and the 7 RESTful routes and operates at full CRUD.
 </p>
 
-> I love to swim in Florida's beautiful springs and I wanted a way to track the springs for any impulsive visit. 
-
 <h3>User Stories:</h3>
 <p>Users can see an Index of Florida Springs and step into each Spring to see more info about it.
 Users have the ability to make New springs or Delete ones they've been to.</p>
+
+> I love to swim in Florida's beautiful springs and I wanted a way to track the springs for any impulsive visit. - Jon
 
 <h3>Wireframes:</h3>
 

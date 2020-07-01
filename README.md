@@ -48,26 +48,3 @@ _Desktop Show Page_
 _Desktop Edit Page_
 <br />
 <img src="./public/img/Wireframes-Project_2/Wireframe_Desktop-Edit.png" width="300"/>
-
-
-<h4>For Heroku, use engines and the current version of Node.js. Make sure start is specified.</h4>
-
-```json 
-{
-  "engines": {
-    "node": "13.12.0"
-  },
-  "name": "project_2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
-```

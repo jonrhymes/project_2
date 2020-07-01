@@ -1,7 +1,7 @@
 <h1>GA Project 2: Springs.ly</h1>
 
 <h3>Project Goals:</h3>
-<p>For my second project, I set out to build a mobile-first app that displayed real-time databases from APIs and could be queried.
+<p>For my second project, I set out to build a mobile-first app that displayed real-time databases from APIs and could be queried. However, what resulted was  accomplished with a psuedo-Api, whereby I seeded data into a Schema that's stored in the Mongo Database. The db serves up arrays of trivia, activities, and a carousel of images. 
 
 The app is built using:
 * Node.js

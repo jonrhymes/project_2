@@ -16,9 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "bl": "^4.0.3",
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
     "express-session": "^1.17.1",
+    "lodash": "^4.17.20",
     "method-override": "^3.0.0",
     "mongodb": "^3.5.9",
     "mongoose": "^5.9.15",
